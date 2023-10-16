@@ -1,5 +1,5 @@
 import React from 'react'
-import { CompanyContent, Container, Rates } from './style'
+import { Container, Rates } from './style'
 import { AiFillStar } from 'react-icons/ai'
 
 const companys = [
@@ -12,7 +12,7 @@ const Rate = () => {
   return (
     <Container>
         {companys.map((company) => (
-            <CompanyContent key={company.name}>
+            <div key={company.name}>
                 <h2>{company.name}</h2>
                 <Rates>
                     <div>
@@ -24,7 +24,7 @@ const Rate = () => {
                     </div>
                     <span>Nota: <span>{company.rate}</span> | <span>{company.opnions}</span> opniões</span>
                 </Rates>
-             </CompanyContent>
+             </div>
         ))}
     </Container>
   )

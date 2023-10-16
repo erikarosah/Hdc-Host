@@ -1,14 +1,14 @@
 import { styled, css } from "styled-components";
 
 interface IButton {
-    buttonstyle: 'purple' | 'white'
+    buttonstyle: 'purple' | 'white' | 'pink'
   }
 
 export const BtnEnter = styled.button<IButton>`
     cursor: pointer;
     border-radius: 8px;
     font-size: 16px;
-    padding: 1rem 2rem;
+    padding: 0.8rem 2rem;
     transition: 0.4s;
     border: 2px solid #6B27CC;
 
@@ -27,6 +27,16 @@ export const BtnEnter = styled.button<IButton>`
             case 'white':
                 return css `
                     background: #FFF
+                `
+            case 'pink':
+                return css `
+                    background: #FC5185;
+                    border: none;
+                    color: #FFF;
+
+                    &:hover {
+                        background: #D50d0F
+                    }
                 `
         }
     }}

@@ -3,13 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
     width: 100%;
     margin-top: 5rem;
-    margin-bottom: 10rem;
     display: flex;
     justify-content: space-around;
-`;
-
-export const CompanyContent = styled.div`
-    
 `;
 
 export const Rates = styled.div`

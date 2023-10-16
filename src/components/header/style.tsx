@@ -4,7 +4,12 @@ export const Container = styled.div`
     width: 100%;
     max-width: 1700px;
     height: 5rem;
+    background-color: #FFF;
     display: flex;
+    position: sticky;
+    top: 0;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 `;
 
 export const LogoContainer = styled.div`
