@@ -35,20 +35,3 @@ export const Item = styled.li`
 
     color: #333;
 `;
-
-
-export const BtnEnter = styled.button`
-    cursor: pointer;
-    border-radius: 8px;
-    font-size: 16px;
-    padding: 1rem 2rem;
-    transition: 0.4s;
-    border: 2px solid #6B27CC;
-    background-color: #FFF;
-
-    &:hover {
-        background-color: #6B27CC;
-        color: #FFF;
-    }
-
-`;

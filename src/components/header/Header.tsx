@@ -1,6 +1,8 @@
 import React from 'react'
 import Logo from '../../assets/image.png'
-import { BtnEnter, Container, Item, ItemsContainer, LogoContainer } from './style'
+import { Container, Item, ItemsContainer, LogoContainer } from './style'
+import { BtnEnter } from '../button/style'
+
 const Header = () => {
   return (
     <Container>
@@ -13,7 +15,7 @@ const Header = () => {
           <Item>Hospedagem</Item>
           <Item>Pro</Item>
           <Item>Domínios</Item>
-          <BtnEnter>Entrar</BtnEnter>
+          <BtnEnter buttonstyle='white'>Entrar</BtnEnter>
         </ItemsContainer>
     </Container>
   )
