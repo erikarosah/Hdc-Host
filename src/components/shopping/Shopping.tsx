@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Divider, Infos, Plan, PlansContainer, Price, Resource, Sale, SaleInfo } from './style'
 import { BtnEnter } from '../button/style'
 import { FaCheck } from 'react-icons/fa';
+import { StyledTitle } from '../typograpgy';
 
 const plans = [
     { id:'1', name:'Premium', about:'Perfeita para sites pessoais', price_withoud_sale:'47,99',
@@ -23,32 +24,34 @@ const plans = [
 const Shopping = () => {
   return (
     <Container>
-        <h2>Escolha seu plano de hospedagem</h2>
+        <StyledTitle tag='h2' color='purple' fontSize='title'>Escolha seu plano de hospedagem</StyledTitle>
         <PlansContainer>
             {plans.map((plan) => (
                 <Plan key={plan.id} >
                     <Infos>
-                        <h4>{plan.name}</h4>
-                        <span>{plan.about}</span>
+                        <StyledTitle tag='h4' color='purple' fontSize='subTitle'>{plan.name}</StyledTitle>
+                        <StyledTitle tag='span' color='purple' fontSize='span'>{plan.about}</StyledTitle>
                     </Infos>
                     <Price>
                         <Sale>
-                            <span>R${plan.price_withoud_sale}</span>
+                            <StyledTitle tag='span' color='gray' fontSize='span'>R${plan.price_withoud_sale}</StyledTitle>
                             <div>ECONOMIZE {plan.sale}</div>
                         </Sale>
 
                         <SaleInfo>
-                            <span>R$<h2>{plan.actual_price}</h2>/mês*</span>
+                            <StyledTitle tag='span' color='purple' fontSize='subTitle'>R$
+                                <StyledTitle tag='h2' color='purple' fontSize='title'>{plan.actual_price}</StyledTitle>/mês*
+                            </StyledTitle>
                             <p>*Estimativa de gasto mensal durante 48 meses.
                                 Plano é pago de forma integral.
                             </p>
                             <BtnEnter buttonstyle='purple'>Adicionar ao Carrinho</BtnEnter>
-                            <span>R${plan.next_price}/mês* ao renovar</span>
+                            <StyledTitle tag='span' color='gray' fontSize='span'>R${plan.next_price}/mês* ao renovar</StyledTitle>
                         </SaleInfo>
 
                         <Divider></Divider>
                         <Resource>
-                            <h4>Principais recursos</h4>
+                            <StyledTitle tag='h4' color='purple'>Principais recursos</StyledTitle>
                             <ul>
                                 <li>
                                     <FaCheck/>

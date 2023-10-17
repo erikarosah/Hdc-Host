@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
     width: 100%;
@@ -10,9 +10,16 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
 
-    >h2 {
-        font-size: 35px;
-        color: #2f1c6a;
+    @media screen and (max-width: 834px){
+        >h2{
+            font-size: 24px;
+        }
+    }
+
+    @media screen and (max-width: 414px){
+        >h2{
+            width: 90%;
+        }  
     }
 `;
 
@@ -20,6 +27,11 @@ export const PlansContainer = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-around;
+
+    @media screen and (max-width: 884px){
+        flex-direction: column;
+        align-items: center;
+    }
     
 `;
 
@@ -31,23 +43,20 @@ export const Plan = styled.div`
     transition: 0.4s;
     
     &:hover {
+        cursor: pointer;
         transform: scale(1.01);
         box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    @media screen and (max-width: 834px){
+        margin-top: 3rem;
+        border: 1px solid #AFAAFF;  
     }
 `;
 
 export const Infos = styled.div`
     padding: 2rem 0;
     max-height: 115px;
-
-    >h4{
-        font-size: 24px;
-        color: #2f1c6a;
-    }
-
-    >span{
-        font-size: 14px;
-    }
 `;
 
 export const Price = styled.div`
@@ -63,8 +72,6 @@ export const Sale = styled.div`
 
     >span{
         text-decoration: line-through;
-        font-size: 14px;
-        color: #8DA1C4;
     }
 
     >div {
@@ -90,19 +97,11 @@ export const SaleInfo = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 20px;
-        color: #2f1c6a;
     }
 
     
     >span:last-child{
         margin: 0.5rem 0 2rem 0;
-        font-size: 14px;
-        color: #8DA1C4;
-    }
-
-    >span h2{
-        font-size: 35px;
     }
 
     >p {
@@ -126,7 +125,6 @@ export const Resource = styled.div`
 
     >h4 {
         margin-top: 2rem;
-        color: #2f1c6a;
     }
 
     >ul {

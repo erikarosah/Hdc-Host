@@ -1,7 +1,8 @@
 import React from 'react'
-import { BannerContainer, Container, TextContainer, FooterContainer, LogoContainer, Items } from './style'
-import { FaCheck } from 'react-icons/fa'
+import { BannerContainer, Container, TextContainer, FooterContainer, LogoContainer, Items, Options } from './style'
+import { FaCheck, FaAngleDown } from 'react-icons/fa'
 import Logo from '../../assets/image.png'
+import { StyledTitle } from '../typograpgy'
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
       <BannerContainer>
         <img alt='banner' src='https://www.hostinger.com/h-assets/images/pages/homepage-uplift/advanced-security-features-2x.png'/>
         <TextContainer>
-            <h2>Segurança avançada</h2>
+            <StyledTitle tag='h2' color='white' fontSize='title'>Segurança avançada</StyledTitle>
             <ul>
                 <li>
                     <FaCheck/>
@@ -32,11 +33,20 @@ const Footer = () => {
       </BannerContainer>
       <FooterContainer>
             <LogoContainer>
-                <img alt='logo' src={Logo} />
+                <img alt='logo' src={Logo}/>
                 <p>Somos uma provedora de hospedagem de sites com a missão de promover o sucesso a todos que querem começar sua jornada online.
                 Para isso, buscamos sempre melhorar a tecnologia dos nossos servidores, oferecer um suporte profissional e tornar a experiência dos 
                 nossos clientes com a hospedagem de sites a melhor de todas.</p>
             </LogoContainer>
+            <Options>
+                <ul>
+                    <li>Hospedagem <FaAngleDown/></li>
+                    <li>Ferramentas <FaAngleDown/></li>
+                    <li>Domínios <FaAngleDown/></li>
+                    <li>Informações <FaAngleDown/></li>
+                    <li>Sobre nós <FaAngleDown/></li>
+                </ul>
+            </Options>
             <Items>
                 <ul>
                     <li>Hospedagem</li>

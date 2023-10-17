@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
     width: 100%;
@@ -16,19 +16,24 @@ export const BannerContainer = styled.div`
     >img {
         width: 50%;
     }
+
+    @media screen and (max-width: 834px){
+        flex-direction: column-reverse ;
+        align-items: end;
+
+        >img {
+            width: 80%;
+        }
+    }
+
 `;
 
 export const TextContainer = styled.div`
-    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
     color: #FFF;
-
-    >h2 {
-        font-size: 35px;
-    }
 
     >ul {
         width: 70%;
@@ -43,45 +48,42 @@ export const TextContainer = styled.div`
         margin-right: 1rem;
         font-size: 14px;
     }
+
+    @media screen and (max-width: 1024px){
+       >ul{
+        padding: 2rem 0;
+        margin-top: 0;
+       } 
+    }
+
+    @media screen and (max-width: 834px){
+        align-items: flex-start;
+        padding: 0 3rem;
+
+        >ul {
+            gap: 20px;
+            width: 90%;
+        }
+    }
+
+    @media screen and (max-width: 414px){
+        >h2{
+            font-size: 24px;
+        }
+    }
 `;
 
 export const FooterContainer = styled.div`
     background-color: #F4F5FF;
     display: flex;
-    padding: 5rem 0 2rem 2rem;
+    padding: 2rem;
     color: #2F1C6A;
 
-    >div ul li:first-child{
-        text-transform: uppercase;
-        font-weight: bold;
-        cursor: auto;
-
-        &:hover {
-            color: #2F1C6A;
-        }
+    @media screen and (max-width: 1024px){
+       display: flex;
+       flex-direction: column;
     }
-
-    >div ul li {
-        cursor: pointer;
-        
-        &:hover {
-            color: #7345e6;
-        }
-    }
-
-    >div ul {
-        line-height: 2rem;
-    }
-
 `;
-export const Items = styled.div`
-    flex: 1;
-    height: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-`;
-
 
 export const LogoContainer = styled.div`
     width: 20%;
@@ -94,6 +96,97 @@ export const LogoContainer = styled.div`
     color: #45296f;
 
     >img {
-        width: 100px;
+        width: 50px;
+    }
+
+    >p {
+        font-size: 14px;
+        color: #2F1C6A;
+    }
+
+    @media screen and (max-width: 1024px){
+        align-items: flex-start;
+        width: 100%;
+       
+       >p{
+            width: 95%;
+            text-align: left;
+       }
+    
+    }
+`;
+
+export const Items = styled.div`
+    flex: 1;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    >ul li:first-child{
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: auto;
+
+        &:hover {
+            color: #2F1C6A;
+        }
+    }
+
+    >ul li {
+        cursor: pointer;
+        
+        &:hover {
+            color: #7345e6;
+        }
+    }
+
+    >ul {
+        line-height: 2rem;
+    }
+
+    @media screen and (max-width: 1024px){
+        margin-top: 1rem;
+        justify-content: space-between;
+        width: 95%;
+    
+    }
+
+    @media screen and (max-width: 600px){
+       >ul li{
+            font-size:12px ;
+       }
+    
+    }
+
+    @media screen and (max-width: 426px){
+       display: none;
+    }
+`;
+
+export const Options = styled.div`
+    display: none;
+
+    @media screen and (max-width: 426px){
+       display: flex;
+       margin-top: 1rem;
+       line-height: 1.5rem;
+       text-transform: uppercase;
+       font-weight: bold;
+       color: #2F1C6A;
+
+       >ul{
+            width: 100%;
+       }
+
+       >ul li {
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+
+            &:hover {
+            color: #7345e6;
+        }
+       }
     }
 `;

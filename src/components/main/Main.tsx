@@ -3,13 +3,16 @@ import { Container, PriceContainer, TitleContainer, Banner } from './style'
 
 import { FaCheck } from 'react-icons/fa';
 import { BtnEnter } from '../button/style';
+import { StyledTitle } from '../typograpgy';
 
 const Main = () => {
   return (
     <Container>
         <TitleContainer>
-            <h1>Plataforma de host completa para você ter qualquer site</h1>
-            <h3>Hospedagem com até <span>73%</span> OFF</h3>
+            <StyledTitle tag='h1' color='purple'>Plataforma de host completa para você ter qualquer site</StyledTitle>
+            <StyledTitle tag='h3' color='purple'>Hospedagem com até
+                <StyledTitle tag='span' color='purple2'> 73%</StyledTitle> OFF
+            </StyledTitle>
             <PriceContainer>
                 <ul>
                     <li>
@@ -25,7 +28,9 @@ const Main = () => {
                         <span>Suporte ao cliente 24h</span>
                     </li>
                 </ul>
-                <span>R$<h2>12,99</h2>/mês*</span>
+                <StyledTitle tag='span' color='purple' fontSize='subTitle'>R$
+                    <StyledTitle tag='h2' color='purple'>12,99</StyledTitle>/mês*
+                </StyledTitle>
             </PriceContainer>
             <BtnEnter buttonstyle='purple'>Aproveitar Oferta</BtnEnter>
         </TitleContainer>

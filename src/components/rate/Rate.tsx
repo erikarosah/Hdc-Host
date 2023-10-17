@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container, Rates } from './style'
 import { AiFillStar } from 'react-icons/ai'
+import { StyledTitle } from '../typograpgy'
 
 const companys = [
     {name:'Trustpilot', rate: '4.6', opnions: '20.588'},
@@ -13,7 +14,7 @@ const Rate = () => {
     <Container>
         {companys.map((company) => (
             <div key={company.name}>
-                <h2>{company.name}</h2>
+                <StyledTitle tag='h2' color='purple'>{company.name}</StyledTitle>
                 <Rates>
                     <div>
                         <AiFillStar/>
@@ -22,7 +23,10 @@ const Rate = () => {
                         <AiFillStar/>
                         <AiFillStar/>
                     </div>
-                    <span>Nota: <span>{company.rate}</span> | <span>{company.opnions}</span> opniões</span>
+                    <StyledTitle tag='span' color='purple'>Nota: 
+                        <StyledTitle tag='span' color='purple'> {company.rate}</StyledTitle> | 
+                        <StyledTitle tag='span' color='purple'> {company.opnions}</StyledTitle> opniões
+                    </StyledTitle>
                 </Rates>
              </div>
         ))}
