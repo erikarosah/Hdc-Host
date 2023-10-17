@@ -1,7 +1,7 @@
-import { styled, css } from "styled-components";
+import { styled, css } from 'styled-components';
 
 interface IButton {
-    buttonstyle: 'purple' | 'white' | 'pink'
+    buttonstyle: 'purple' | 'white'
   }
 
 export const BtnEnter = styled.button<IButton>`
@@ -27,16 +27,6 @@ export const BtnEnter = styled.button<IButton>`
             case 'white':
                 return css `
                     background: #FFF
-                `
-            case 'pink':
-                return css `
-                    background: #FC5185;
-                    border: none;
-                    color: #FFF;
-
-                    &:hover {
-                        background: #D50d0F
-                    }
                 `
         }
     }}
