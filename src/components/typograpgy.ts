@@ -19,7 +19,7 @@ export const StyledTitle = styled(BaseTitle)`
                 `
             case 'gray':
                 return css`
-                    color: #8DA1C4;  
+                    color: #8DA1C4; 
                 `
         }
     }}

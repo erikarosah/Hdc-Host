@@ -73,7 +73,7 @@ export const MenuIcon = styled.div`
 `;
 
 export const DropdowMenu = styled.div<{openmenu:boolean}>`
-    min-width: 95%;
+    min-width: 100vw;
     min-height: 100vh;
     background-color: #FFF;
     display: ${({openmenu}) => openmenu? 'flex':'none'};
@@ -99,7 +99,7 @@ export const DropdowMenu = styled.div<{openmenu:boolean}>`
     }
 
     >ul {
-        height: 100%;
+        height: 80%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
