@@ -190,3 +190,26 @@ export const Options = styled.div`
        }
     }
 `;
+
+export const Copy = styled.div`
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    >span{
+        font-size: 16px;
+        width: 80%;
+        font-weight: 300;
+
+        >a svg{
+            font-size: 18px;
+            cursor: pointer;
+            margin-left: 0.5rem;
+            transition: 0.4s;
+        }
+    }
+`;
