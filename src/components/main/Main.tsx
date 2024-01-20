@@ -3,7 +3,8 @@ import { Container, PriceContainer, TitleContainer, Banner } from './style'
 
 import { FaCheck } from 'react-icons/fa';
 import { BtnEnter } from '../button/style';
-import { StyledTitle } from '../typograpgy';
+import { StyledTitle } from '../styled-title';
+import Banner1 from '../../assets/banner-1.webp'
 
 const Main = () => {
   return (
@@ -35,7 +36,7 @@ const Main = () => {
             <BtnEnter buttonstyle='purple'>Aproveitar Oferta</BtnEnter>
         </TitleContainer>
         <Banner>
-            <img alt='banner' src='https://heybizz.com/wp-content/uploads/2023/05/homepage-hero-2x.webp'/>
+            <img alt='banner' src={Banner1}/>
         </Banner>
     </Container>
   )

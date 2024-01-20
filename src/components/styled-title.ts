@@ -2,8 +2,8 @@ import { styled, css } from 'styled-components';
 import BaseTitle from './typography';
 
 export const StyledTitle = styled(BaseTitle)`
-   ${({color}) => {
-        switch(color){
+   ${({ color }) => {
+        switch (color) {
             case 'purple':
                 return css`
                     color: #2f1c6a;
@@ -14,7 +14,7 @@ export const StyledTitle = styled(BaseTitle)`
                  
                 `
             case 'white':
-                return css `
+                return css`
                     color: #FFF;
                 `
             case 'gray':
@@ -24,18 +24,18 @@ export const StyledTitle = styled(BaseTitle)`
         }
     }}
 
-    ${({fontSize}) => {
-        switch(fontSize){
+    ${({ fontSize }) => {
+        switch (fontSize) {
             case 'title':
                 return css`
                     font-size: 34px;
             `
             case 'subTitle':
-                return css `
+                return css`
                     font-size: 24px;
                 `
             case 'span':
-                return css `
+                return css`
                     font-size: 14px;
                 `
         }

@@ -1,14 +1,9 @@
 import React from 'react'
 import { Container, Rates } from './style'
 import { AiFillStar } from 'react-icons/ai'
-import { StyledTitle } from '../typograpgy'
+import { companys } from '../../../utils/companys'
+import { StyledTitle } from '../styled-title'
 
-const companys = [
-    {name:'Trustpilot', rate: '4.6', opnions: '20.588'},
-    {name:'Google', rate: '4.8/5', opnions: '5.608'},
-    {name:'hostadvice', rate: '4.5/5', opnions: '2.416'},
-    {name:'wpbeginner', rate: '4.7', opnions: '874'},
-]
 const Rate = () => {
   return (
     <Container>

@@ -1,10 +1,10 @@
 import React from 'react'
 
 interface iBaseTitleProps{
-    children: React.ReactNode;
-    tag: 'h1' | 'h2' | 'h3' | 'h4'| 'span';
-    color: 'purple' | 'purple2' | 'white' | 'gray';
-    fontSize?: 'title' | 'subTitle' | 'span';
+  children: React.ReactNode;
+  tag: 'h1' | 'h2' | 'h3' | 'h4'| 'span';
+  color: 'purple' | 'purple2' | 'white' | 'gray';
+  fontSize?: 'title' | 'subTitle' | 'span';
 }
 
 const BaseTitle = ({ children, tag }: iBaseTitleProps) => {
@@ -19,4 +19,4 @@ const BaseTitle = ({ children, tag }: iBaseTitleProps) => {
   )
 }
 
-export default BaseTitle;
+export default BaseTitle

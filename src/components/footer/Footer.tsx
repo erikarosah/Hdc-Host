@@ -3,14 +3,15 @@ import { BannerContainer, Container, TextContainer, FooterContainer, LogoContain
 import { FaCheck, FaAngleDown } from 'react-icons/fa'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import Logo from '../../assets/image.png'
-import { StyledTitle } from '../typograpgy'
+import Banner from '../../assets/banner-2.png'
+import { StyledTitle } from '../styled-title'
 
 const Footer = () => {
   return (
     <>
         <Container>
             <BannerContainer>
-                <img alt='banner' src='https://www.hostinger.com/h-assets/images/pages/homepage-uplift/advanced-security-features-2x.png'/>
+                <img alt='banneraaaaaa' src={Banner}/>
                 <TextContainer>
                     <StyledTitle tag='h2' color='white' fontSize='title'>Segurança avançada</StyledTitle>
                     <ul>
